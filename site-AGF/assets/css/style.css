@@ -81,10 +81,10 @@ section {
     position: relative;
     height: 550px;
     border: 1px solid #dcdceb;
-    background: #fff;
+    background: rgb(255, 255, 255);
     border-radius: 10px;
     color: #0d910d;
-    background-image: url('../img/agfmais-background.png');
+    background-image: url('../../assets/img/CSAN3.png');
     background-repeat: no-repeat;
     background-position: right;
 }

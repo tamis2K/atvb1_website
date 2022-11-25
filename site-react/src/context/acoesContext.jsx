@@ -3,83 +3,82 @@ import { createContext, useState } from "react";
 
 const dados = [
     {
-        foto: '',
+        foto: './assets/img/BBAS3.png',
         titulo: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
         descricao: 'Atque veniam explicabo qui eius? Aspernatur officiis sed nam quae. Mollitia itaque, facere corporis eaque voluptates eligendi recusandae consequuntur non ullam fugiat.Atque veniam explicabo qui eius? Aspernatur officiis sed nam quae.',
         preco: 901000.00,
-        operacao: 'venda',
+        operacao: 'venda'
     },
     {
-        foto: './assets/img/thumb2.png',
+        foto: './assets/img/CSAN3.png',
         titulo: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
         descricao: 'Atque veniam explicabo qui eius? Aspernatur officiis sed nam quae. Mollitia itaque, facere corporis eaque voluptates eligendi recusandae consequuntur non ullam fugiat.Atque veniam explicabo qui eius? Aspernatur officiis sed nam quae.',
         preco: 902000.00,
-        operacao: 'locacao',
+        operacao: 'locacao'
     },
     {
-        foto: './assets/img/thumb3.png',
+        foto: './assets/img/EGIE3.png',
         titulo: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
         descricao: 'Atque veniam explicabo qui eius? Aspernatur officiis sed nam quae. Mollitia itaque, facere corporis eaque voluptates eligendi recusandae consequuntur non ullam fugiat.Atque veniam explicabo qui eius? Aspernatur officiis sed nam quae.',
         preco: 903000.00,
-        operacao: 'venda',
+        operacao: 'venda'
     },
     {
-        foto: '',
+        foto: './assets/img/PETR4.png',
         titulo: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
         descricao: 'Atque veniam explicabo qui eius? Aspernatur officiis sed nam quae. Mollitia itaque, facere corporis eaque voluptates eligendi recusandae consequuntur non ullam fugiat.Atque veniam explicabo qui eius? Aspernatur officiis sed nam quae.',
         preco: 904000.00,
-        operacao: 'venda',
+        operacao: 'Compra'
     },
     {
-        foto: './assets/img/thumb5.png',
+        foto: './assets/img/PSSA3.png',
         titulo: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
         descricao: 'Atque veniam explicabo qui eius? Aspernatur officiis sed nam quae. Mollitia itaque, facere corporis eaque voluptates eligendi recusandae consequuntur non ullam fugiat.Atque veniam explicabo qui eius? Aspernatur officiis sed nam quae.',
         preco: 905000.00,
-        operacao: 'venda',
+        operacao: 'venda'
     },
     {
-        foto: './assets/img/thumb6.png',
+        foto: './assets/img/RRRP3.png',
         titulo: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
         descricao: 'Atque veniam explicabo qui eius? Aspernatur officiis sed nam quae. Mollitia itaque, facere corporis eaque voluptates eligendi recusandae consequuntur non ullam fugiat.Atque veniam explicabo qui eius? Aspernatur officiis sed nam quae.',
         preco: 906000.00,
-        operacao: 'venda',
+        operacao: 'venda'
     },
     {
-        foto: './assets/img/thumb3.png',
+        foto: './assets/img/SUZB3.png',
         titulo: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
         descricao: 'Atque veniam explicabo qui eius? Aspernatur officiis sed nam quae. Mollitia itaque, facere corporis eaque voluptates eligendi recusandae consequuntur non ullam fugiat.Atque veniam explicabo qui eius? Aspernatur officiis sed nam quae.',
         preco: 990000.00,
-        operacao: 'locacao',
+        operacao: 'Compra'
     },
     {
-        foto: './assets/img/thumb3.png',
+        foto: './assets/img/TOTS3.png',
         titulo: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
         descricao: 'Atque veniam explicabo qui eius? Aspernatur officiis sed nam quae. Mollitia itaque, facere corporis eaque voluptates eligendi recusandae consequuntur non ullam fugiat.Atque veniam explicabo qui eius? Aspernatur officiis sed nam quae.',
-        preco: 903000.00,
-        operacao: 'venda',
+        preco: 901000.00,
+        operacao: 'Compra'
     },
     {
-        foto: './assets/img/thumb3.png',
+        foto: './assets/img/UNIP6.png',
         titulo: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
         descricao: 'Atque veniam explicabo qui eius? Aspernatur officiis sed nam quae. Mollitia itaque, facere corporis eaque voluptates eligendi recusandae consequuntur non ullam fugiat.Atque veniam explicabo qui eius? Aspernatur officiis sed nam quae.',
-        preco: 903000.00,
-        operacao: 'venda',
+        preco: 901000.00,
+        operacao: 'venda'
     },
     {
-        foto: './assets/img/thumb3.png',
+        foto: './assets/img/VALE3.png',
         titulo: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
         descricao: 'Atque veniam explicabo qui eius? Aspernatur officiis sed nam quae. Mollitia itaque, facere corporis eaque voluptates eligendi recusandae consequuntur non ullam fugiat.Atque veniam explicabo qui eius? Aspernatur officiis sed nam quae.',
-        preco: 903000.00,
-        operacao: 'venda',
-    }
+        preco: 901000.00,
+        operacao: 'venda'
+    },
 ]
+export const AcoesContext = createContext();
 
-export const ImovelContext = createContext();
+export function AcoesContextProvider(props) {
 
-export function ImovelContextProvider(props) {
-
-    const [imoveis, setImoveis] = useState(dados);
-    const [paramFilter, setParamFilter] = useState({});    
+    const [acoes, setAcoes] = useState(dados);
+    const [paramFilter, setParamFilter] = useState({});
 
     useEffect(() => {
 
@@ -105,15 +104,15 @@ export function ImovelContextProvider(props) {
             dadosFiltrados = dadosFiltrados.filter(item => item.bairro === paramFilter.bairro)
         }
 
-        setImoveis(dadosFiltrados)
+        setAcoes(dadosFiltrados)
 
-    }, [ paramFilter ]);
+    }, [paramFilter]);
 
 
 
     return (
-        <ImovelContext.Provider value={{imoveis, setParamFilter}}>
+        <AcoesContext.Provider value={{ acoes, setParamFilter }}>
             {props.children}
-        </ImovelContext.Provider>
+        </AcoesContext.Provider>
     )
 }

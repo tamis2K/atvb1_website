@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { acoesContext } from "../context/acoesContext";
+import { AcoesContext } from "../context/AcoesContext";
 
 export function useAcoes() {
-    const context = useContext(acoesContext);
+    const context = useContext(AcoesContext);
     return context;
 }

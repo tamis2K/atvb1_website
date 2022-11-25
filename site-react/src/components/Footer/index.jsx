@@ -1,7 +1,7 @@
 import './style.css';
 
-export function Footer(){
-    return(
+export function Footer() {
+    return (
         <footer>
         <div class="container">
             <div class="footer-content">
@@ -47,9 +47,10 @@ export function Footer(){
             </div>
 
             <p class="footer-copyright">
-                 &#169; 2022 - Todos os direitos reservados
+                &#169; 2022 - Todos os direitos reservados
             </p>
         </div>
     </footer>
+        
     )
 }

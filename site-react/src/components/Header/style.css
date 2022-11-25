@@ -14,11 +14,11 @@ header .brand {
     gap: 16px;
 }
 header .brand img {
-    width: 40px;
+    width: 100px;
 }
 header .brand h6 {
     font-size: 24px;
-    color: #01528A;
+    color: #0d910d;
     font-weight: 400;
     line-height: 30px;
 }
@@ -39,14 +39,14 @@ header li a {
 }
 header li a:hover,
 header li a.active {
-    color: #0889d4;
+    color: #0d910d;
 }
 header li a.active {    
     font-weight: 400;
-    border-bottom: 2px solid #0889d4;
+    border-bottom: 2px solid #0d910d;
 }
 header li button {
-    background-color: #0889d4;
+    background-color: #0d910d;
     color: #fff;
     border: none;
     text-transform: uppercase;

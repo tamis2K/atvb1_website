@@ -1,9 +1,10 @@
 import './style.css';
 
 const razoes = [
-    { valor: '+400', rotulo: 'Empresas Listadas'},
-    { valor: '+70000', rotulo: 'Clientes'},
-    { valor: '+20', rotulo: 'Especialistas'}
+    { valor: '+1000', rotulo: 'Imóveis'},
+    { valor: '+500', rotulo: 'Clientes'},
+    { valor: '+50', rotulo: 'Premiações'},
+    { valor: '+100', rotulo: 'Especialistas'}
 ];
 
 
