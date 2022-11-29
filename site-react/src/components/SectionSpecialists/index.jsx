@@ -2,19 +2,19 @@ import './style.css';
 
 const especialistas = [
     {
-        nome: 'Tutu Williams',
-        cidade: 'London',
-        descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium error, labore odio facilis quasi quaerat debitis qui fugit pariatur neque voluptatibus consequatur similique hic saepe perspiciatis tempore, delectus beatae eligendi!'
+        nome: 'Mateus Varnier',
+        cidade: 'Pato branco',
+        descricao: 'Seguidor do metodo barsi buscar boas empresas pagadoras de Dividendos e crescimento'
     },
     {
-        nome: 'Mark Zion',
-        cidade: 'New York City',
-        descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium error, labore odio facilis quasi quaerat debitis qui fugit pariatur neque voluptatibus consequatur similique hic saepe perspiciatis tempore, delectus beatae eligendi!'
+        nome: 'Luiz Barsi Filho',
+        cidade: 'São Paulo',
+        descricao: 'Luiz Barsi Filho é um economista, advogado e o maior investidor individual brasileiro. Criador do metodo Barsi de investir vivendo de Dividendos'
     },
     {
-        nome: 'Essien Crest',
-        cidade: 'Berlin',
-        descricao: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium error, labore odio facilis quasi quaerat debitis qui fugit pariatur neque voluptatibus consequatur similique hic saepe perspiciatis tempore, delectus beatae eligendi!'
+        nome: 'Felipe Ruiz',
+        cidade: 'São Paulo',
+        descricao: 'INVESTIDOR desde 1999 É engenheiro de produção e possui MBA pelo MIT (Massachusetts Institute of Technology).'
     }
 ];
 
