@@ -16,12 +16,6 @@ header .brand {
 header .brand img {
     width: 100px;
 }
-header .brand h6 {
-    font-size: 24px;
-    color: #0d910d;
-    font-weight: 400;
-    line-height: 30px;
-}
 header ul {
     display: flex;
     flex-direction: row;

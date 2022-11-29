@@ -1,7 +1,6 @@
 import { useState } from 'react';
-import { useAcoes } from '../../hook/useAcoes';
+import { useImovel } from '../../hook/useImovel';
 import './style.css';
-
 
 const operacoes = [
     { valor: '', rotulo: 'Operação' },
@@ -33,10 +32,9 @@ const bairros = [
     { valor: 'pinheiro', rotulo: 'Pinheiros' }
 ];
 
-
 export function SectionBanner() {
 
-    const { acoes, setParamFilter } = useAcoes();
+    const { imoveis, setParamFilter } = useImovel();
 
     const [filter, setFilter] = useState({});
 
@@ -86,8 +84,8 @@ export function SectionBanner() {
                 </div>
 
                 <div className="filter-result">
-                    <p className="result-value">{acoes.length}</p>
-                    <p className="result-label">{acoes.length != 1 ? 'imóveis' : 'imóvel'}</p>
+                    <p className="result-value">{imoveis.length}</p>
+                    <p className="result-label">{imoveis.length != 1 ? 'imóveis' : 'imóvel'}</p>
                     <button onClick={handleFilter}>Filtrar</button>
                 </div>
             </div>

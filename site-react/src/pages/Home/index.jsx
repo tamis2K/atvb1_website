@@ -1,18 +1,18 @@
+import { SectionBanner } from '../../components/SectionBanner';
 import { SectionReasons } from '../../components/SectionReasons';
 import { SectionSpecialists } from '../../components/SectionSpecialists';
 import { SectionCards } from '../../components/SectionCards';
-import { SectionBanner } from '../../components/SectionBanner';
-import { AcoesContextProvider } from '../../context/AcoesContext';
+import { ImovelContextProvider } from '../../context/ImovelContext';
 
 export function HomePage() {
     return (
         <div id="home-page">
             <div className="container">
 
-                <AcoesContextProvider>
+                <ImovelContextProvider>
                     <SectionBanner />
                     <SectionCards />
-                </AcoesContextProvider>
+                </ImovelContextProvider>
 
                 <SectionReasons />
 
