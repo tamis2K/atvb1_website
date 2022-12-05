@@ -1,23 +1,23 @@
 import { IntlProvider, FormattedNumber } from 'react-intl';
-import { uselAcoes } from '../../hook/useIAcoes';
+import { useImovel } from '../../hook/useImovel';
 
 import './style.css';
 
 
 export function SectionCards() {
 
-    const { acoes } = uselAcoes();
+    const { imoveis } = useImovel();
 
     return (
         <section id="cards">
             <h2>Top empresas pagadoras de Dividendos e crescimento</h2>
 
-            {acoes.length > 0 ? (
+            {imoveis.length > 0 ? (
                 <div className="cards-content">
 
-                    {acoes.map((item, index) => (
+                    {imoveis.map((item, index) => (
                         <div key={index} className="card">
-                            <img src={item.foto} alt="" />
+                            <img src={item.foto} alt="Casa 1" />
                             <div className="card-content">
                                 <h4>{item.titulo}</h4>
                                 <p>{item.descricao}</p>

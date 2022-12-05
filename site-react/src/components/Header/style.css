@@ -16,6 +16,12 @@ header .brand {
 header .brand img {
     width: 100px;
 }
+header .brand h6 {
+    font-size: 24px;
+    color:  #0d910d;
+    font-weight: 400;
+    line-height: 30px;
+}
 header ul {
     display: flex;
     flex-direction: row;
@@ -33,14 +39,14 @@ header li a {
 }
 header li a:hover,
 header li a.active {
-    color: #0d910d;
+    color:  #0d910d;
 }
 header li a.active {    
     font-weight: 400;
-    border-bottom: 2px solid #0d910d;
+    border-bottom: 2px solid  #0d910d;
 }
 header li button {
-    background-color: #0d910d;
+    background-color:  #0d910d;
     color: #fff;
     border: none;
     text-transform: uppercase;

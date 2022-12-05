@@ -2,22 +2,21 @@ import { SectionBanner } from '../../components/SectionBanner';
 import { SectionReasons } from '../../components/SectionReasons';
 import { SectionSpecialists } from '../../components/SectionSpecialists';
 import { SectionCards } from '../../components/SectionCards';
-import { acoesGa } from '../../context/acoesGa';
+import { ImovelContextProvider } from '../../context/ImovelContext';
 
 export function HomePage() {
     return (
         <div id="home-page">
             <div className="container">
 
-                <acoesGa>
+                <ImovelContextProvider>
                     <SectionBanner />
                     <SectionCards />
-                </acoesGa>
+                </ImovelContextProvider>
 
                 <SectionReasons />
 
                 <SectionSpecialists />
-
             </div>
         </div>
     )

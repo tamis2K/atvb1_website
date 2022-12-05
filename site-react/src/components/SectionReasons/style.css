@@ -10,7 +10,7 @@
 }
 #reasons .reasons-content .reason {
     width: 100%;
-    border-left: 2px solid #0d910d;
+    border-left: 2px solid  #0d910d;
 }
 #reasons .reason:first-of-type {
     border-left: none;
